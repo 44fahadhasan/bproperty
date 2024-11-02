@@ -1,3 +1,13 @@
-export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+import "preline/preline"; // Import Preline styles and scripts
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/Routes";
+
+function App() {
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
+
+export default App;
